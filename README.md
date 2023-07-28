@@ -273,7 +273,9 @@ Now everything should run! You can check that with:
 ```
 kubectl get all -n ingress-nginx
 ```
-You should see a pod with the name `myapp` with the state `Running`.
+You should see a pod with the name `myapp` with the state `Running`. Now let's check if it is also running on AKS.
+In the section `services` you should see an External-IP in the `ingress-nginx-controller`.
+If you call that IP on your browser, you should see a running Svelte website. Great, you're done!
 
 
 # Sources
